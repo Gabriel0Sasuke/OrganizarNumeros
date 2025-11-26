@@ -47,6 +47,7 @@
             BtnFacil.TabIndex = 0;
             BtnFacil.Text = "Fácil";
             BtnFacil.UseVisualStyleBackColor = true;
+            BtnFacil.Click += BtnFacil_Click;
             // 
             // label1
             // 

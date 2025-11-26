@@ -11,5 +11,13 @@ namespace OrganizarNumeros
         {
             Application.Exit();
         }
+
+        private void BtnFacil_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var FacilForm = new Facil();
+            FacilForm.FormClosed += (s, args) => this.Show();
+            FacilForm.Show();
+        }
     }
 }
