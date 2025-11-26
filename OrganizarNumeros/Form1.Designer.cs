@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             BtnFacil = new Button();
             label1 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
@@ -40,22 +41,28 @@
             // 
             // BtnFacil
             // 
-            BtnFacil.Font = new Font("Segoe UI", 12F);
+            BtnFacil.BackColor = Color.FromArgb(168, 230, 207);
+            BtnFacil.Cursor = Cursors.Hand;
+            BtnFacil.FlatAppearance.BorderSize = 0;
+            BtnFacil.FlatStyle = FlatStyle.Flat;
+            BtnFacil.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            BtnFacil.ForeColor = Color.Black;
             BtnFacil.Location = new Point(196, 136);
             BtnFacil.Name = "BtnFacil";
             BtnFacil.Size = new Size(398, 54);
             BtnFacil.TabIndex = 0;
             BtnFacil.Text = "Fácil";
-            BtnFacil.UseVisualStyleBackColor = true;
+            BtnFacil.UseVisualStyleBackColor = false;
             BtnFacil.Click += BtnFacil_Click;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 19F);
-            label1.Location = new Point(196, 9);
+            label1.Dock = DockStyle.Top;
+            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(398, 45);
+            label1.Size = new Size(800, 70);
             label1.TabIndex = 1;
             label1.Text = "Jogo de Ordenar Numeros";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -81,23 +88,35 @@
             // 
             // BtnMedio
             // 
-            BtnMedio.Font = new Font("Segoe UI", 12F);
+            BtnMedio.BackColor = Color.FromArgb(255, 226, 154);
+            BtnMedio.Cursor = Cursors.Hand;
+            BtnMedio.FlatAppearance.BorderSize = 0;
+            BtnMedio.FlatStyle = FlatStyle.Flat;
+            BtnMedio.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            BtnMedio.ForeColor = Color.Black;
             BtnMedio.Location = new Point(196, 198);
             BtnMedio.Name = "BtnMedio";
             BtnMedio.Size = new Size(398, 54);
             BtnMedio.TabIndex = 4;
             BtnMedio.Text = "Medio";
-            BtnMedio.UseVisualStyleBackColor = true;
+            BtnMedio.UseVisualStyleBackColor = false;
+            BtnMedio.Click += BtnMedio_Click;
             // 
             // BtnDificil
             // 
-            BtnDificil.Font = new Font("Segoe UI", 12F);
+            BtnDificil.BackColor = Color.FromArgb(255, 173, 173);
+            BtnDificil.Cursor = Cursors.Hand;
+            BtnDificil.FlatAppearance.BorderSize = 0;
+            BtnDificil.FlatStyle = FlatStyle.Flat;
+            BtnDificil.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            BtnDificil.ForeColor = Color.Black;
             BtnDificil.Location = new Point(196, 258);
             BtnDificil.Name = "BtnDificil";
             BtnDificil.Size = new Size(398, 54);
             BtnDificil.TabIndex = 5;
             BtnDificil.Text = "Dificil";
-            BtnDificil.UseVisualStyleBackColor = true;
+            BtnDificil.UseVisualStyleBackColor = false;
+            BtnDificil.Click += BtnDificil_Click;
             // 
             // BtnSair
             // 
@@ -122,6 +141,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(45, 45, 48);
             ClientSize = new Size(800, 450);
             Controls.Add(flowLayoutPanel2);
             Controls.Add(BtnSair);
@@ -132,9 +152,10 @@
             Controls.Add(label1);
             Controls.Add(BtnFacil);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Jogo - Organizar Numeros";
             ResumeLayout(false);
             PerformLayout();
         }
